@@ -1,0 +1,23 @@
+# Android Studio
+.idea/
+*.iml
+
+# Gradle e saídas de compilação
+.gradle/
+/build/
+**/build/
+gradle/gradle-daemon-jvm.properties
+
+# Configurações locais e chaves de assinatura
+/local.properties
+*.jks
+*.keystore
+
+# Builds nativas
+.externalNativeBuild/
+.cxx/
+
+# Arquivos gerados localmente
+/captures/
+.DS_Store
+Thumbs.db
