@@ -45,7 +45,7 @@ object GameEngine {
         }
 
         newSnapshot = checkVictory(newSnapshot)
-        newSnapshot = checkGameOver((gameSnapshot))
+        newSnapshot = checkGameOver(newSnapshot)
 
         return newSnapshot
     }
@@ -242,5 +242,4 @@ object GameEngine {
         return gameSnapshot.copy(board = Board(newBoard), score = score)
     }
 }
-
 
