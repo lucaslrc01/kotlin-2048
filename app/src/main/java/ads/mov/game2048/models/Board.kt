@@ -23,5 +23,20 @@ data class Board(
                 }
             )
         }
+
     }
+
+    fun emptyCells(): List<Pair<Int, Int>> {
+        val positions = mutableListOf<Pair<Int, Int>>()
+
+        for (row in cells.indices) {
+            for (column in cells[row].indices)
+                if (cells[row][column] == 0) {
+                    positions.add(row to column)
+                }
+        }
+
+        return positions
+    }
+
 }
